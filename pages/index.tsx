@@ -12,7 +12,7 @@ export default function Home() {
       {/* <button onClick={handleGetAllNfts}>get all</button> */}
       <div className="flex flex-wrap justify-center items-center mt-10">
         {nfts?.map((item: NFT) => (
-          <Card {...item} />
+          <Card key={item.tokenId} {...item} />
         ))}
       </div>
     </>
